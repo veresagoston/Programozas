@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("20210927")]
+[assembly: AssemblyTitle("20211122_konzol")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("20210927")]
+[assembly: AssemblyProduct("20211122_konzol")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f741df1c-167a-4fdc-97ad-9c516886a330")]
+[assembly: Guid("8bb38a24-e00e-4c39-a552-25015757e2f0")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -19,74 +19,49 @@ namespace _20210915
 
         private void Btnosszeadas_Click(object sender, EventArgs e)
         {
-            lblmuvelet.Text = "Összeadás művelet";
-            try
-            {
-                int adat1 = Convert.ToInt32(txbadat1.Text);
-                int adat2 = Convert.ToInt32(txbadat2.Text);
-                int eredmeny;
+            int a,b,c;
+            a = Convert.ToInt32(txtadat1.Text);
+            b = Convert.ToInt32(txtadat2.Text);
+            c = a + b;
+            txteredmeny.Text = c.ToString();
+            lblmuvelet.Text = "Müvelet: összeadás";
+            lblmuvelet.Visible = true;
 
-                eredmeny = adat1 + adat2;
 
-                txberedmeny.Text = Convert.ToString(eredmeny);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("nem jó számot adtál meg");
-               
-            }
-            
 
-                
 
-            
-        }
-
-        private void Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void Btnkivonas_Click(object sender, EventArgs e)
         {
-            try
-            {
-                lblmuvelet.Text = "Kivonás művelet";
-                int adat1 = Convert.ToInt32(txbadat1.Text);
-                int adat2 = Convert.ToInt32(txbadat2.Text);
-                int eredmeny;
+            int a, b, c;
+            a = Convert.ToInt32(txtadat1.Text);
+            b = Convert.ToInt32(txtadat2.Text);
+            c = a - b;
+            txteredmeny.Text = c.ToString();
+            lblmuvelet.Text = "Müvelet: Kivonás";
+            lblmuvelet.Visible = true;
 
-                eredmeny = adat1 - adat2;
-
-                txberedmeny.Text= Convert.ToString(eredmeny);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("nem jó számot adtál meg");
-                
-            }
-            
         }
 
         private void Btnszorzas_Click(object sender, EventArgs e)
         {
+            int a, b, c;
+            a = Convert.ToInt32(txtadat1.Text);
+            b = Convert.ToInt32(txtadat2.Text);
+            c = a * b;
+            txteredmeny.Text = c.ToString();
+            lblmuvelet.Text = "Müvelet: Szorzás";
+            lblmuvelet.Visible = true;
+        }
 
-            try
-            {
-                lblmuvelet.Text = "Szorzás művelet";
-                int adat1 = Convert.ToInt32(txbadat1.Text);
-                int adat2 = Convert.ToInt32(txbadat2.Text);
-                int eredmeny;
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
-                eredmeny = adat1 * adat2;
+        }
 
-                txberedmeny.Text = Convert.ToString(eredmeny);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("nem jó számot adtál meg");
-            
-            }
+        private void Lblmuvelet_Click(object sender, EventArgs e)
+        {
             
 
         }

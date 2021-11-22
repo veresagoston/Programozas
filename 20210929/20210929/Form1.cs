@@ -17,74 +17,55 @@ namespace _20210929
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Btnkilep_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void Btnevszak_Click(object sender, EventArgs e)
         {
-
-            int szam1 = Convert.ToInt32(txbelsoszam.Text);
-            int szam2 = Convert.ToInt32(txbmasodikszam.Text);
-            int nagyobb;
-            int kissebb;
-            int oszto = 1;
-
-            kissebb = szam2;
-            nagyobb = szam1;
-
-
-
-
-
-
-            if (szam1 > szam2)
+            int szam = Convert.ToInt32(txtadat.Text);
+            switch(szam)
             {
-
-                nagyobb = szam1;
-                kissebb = szam2;
-
+                case 1:
+                    lblszoveg.Text = ("Tél");
+                    break;
+                case 2:
+                    lblszoveg.Text = ("Tél");
+                    break;
+                case 3:
+                    lblszoveg.Text = ("Tavasz");
+                    break;
+                case 4:
+                    lblszoveg.Text = ("Tavasz");
+                    break;
+                case 5:
+                    lblszoveg.Text = ("Tavasz");
+                    break;
+                case 6:
+                    lblszoveg.Text = ("Nyár");
+                    break;
+                case 7:
+                    lblszoveg.Text = ("Nyár");
+                    break;
+                case 8:
+                    lblszoveg.Text = ("Nyár");
+                    break;
+                case 9:
+                    lblszoveg.Text = ("Ősz");
+                    break;
+                case 10:
+                    lblszoveg.Text = ("Ősz");
+                    break;
+                case 11:
+                    lblszoveg.Text = ("Ősz");
+                    break;
+                case 12:
+                    lblszoveg.Text = ("Tél");
+                    break;
+                
+                    
             }
-            else if (szam1 == szam2)
-            {
-
-                txboszto.Text = Convert.ToString(szam1);
-
-            }
-            else if (szam1 < szam2)
-            {
-
-                nagyobb = szam2;
-                kissebb = szam1;
-
-            }
-
-            for (int i = 1; i < kissebb+1; i++)
-            {
-
-                if (kissebb % i == 0 && nagyobb % i == 0)
-                {
-
-                    oszto = i;
-
-                }
-
-            }
-
-
-            txboszto.Text = Convert.ToString(oszto);
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }

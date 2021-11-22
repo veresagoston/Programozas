@@ -8,385 +8,224 @@ namespace _20210920
 {
     class Program
     {
-
-        static void feladat1()
-        {
-            Console.WriteLine("1. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a % 2 == 0)
-            {
-
-                Console.WriteLine("A szám páros!");
-
-            }
-            else
-            {
-
-                Console.WriteLine("A szám páratlam!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat2()
-        {
-            Console.WriteLine("2. feladat");
-            Console.WriteLine();
-
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 0)
-            {
-
-                Console.WriteLine("A szám negatív!");
-
-            }
-            else if (a == 0)
-            {
-
-                Console.WriteLine("A szám eggyenlő 0-val");
-
-            }
-            else
-            {
-
-                Console.WriteLine("a szám pozitív!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat3()
-        {
-            Console.WriteLine("3. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 0)
-            {
-
-                Console.WriteLine("Odakint fagy van!");
-
-            }
-            else if (a == 0)
-            {
-
-                Console.WriteLine("Fagypont van");
-
-            }
-            else
-            {
-
-                Console.WriteLine("Nincs fagy odakint");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat4()
-        {
-            Console.WriteLine("4. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 40 && a > -30)
-            {
-
-                Console.WriteLine("a szám -30 és 40 között van!");
-
-            }
-            else
-            {
-
-                Console.WriteLine("A szám kívül esik a -30 és 40-es inter vallumon!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat5()
-        {
-            Console.WriteLine("5. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 16)
-            {
-
-                a = a * 10;
-                Console.WriteLine(a);
-
-            }
-            else if (a >= 16)
-            {
-
-                a = a / 3;
-                Console.WriteLine(a);
-
-            }
-
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat6()
-        {
-            Console.WriteLine("6. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a > 10 && a < 20)
-            {
-
-                Console.WriteLine("tizesek");
-
-            }
-            else if (a > 20 && a <30)
-            {
-
-                Console.WriteLine("huszasok");
-
-            }
-            else if (a > 30 && a < 40)
-            {
-
-                Console.WriteLine("harmincasok");
-
-            }
-            else if (a > 40 && a < 50)
-            {
-
-                Console.WriteLine("negyvenesek");
-
-            }
-            else if (a < 10 )
-            {
-
-                Console.WriteLine("a szám nem tartozik bele a 10-50-es intervallumba");
-
-            }
-            else if (a > 50)
-            {
-
-                Console.WriteLine("a szám nem tartozik bele a 10-50-es intervallumba");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat7()
-        {
-            Console.WriteLine("7. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a > 12 && a < 25 && a % 2 == 0)
-            {
-
-                Console.WriteLine(a);
-
-            }
-            else
-            {
-
-                Console.WriteLine("A szám nem osztható 2-vel vagy nincs benne a 12-25-ös intervallumban!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat8()
-        {
-            Console.WriteLine("8. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérem a víz hőmérsékletét");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a < 0)
-            {
-
-                Console.WriteLine("a víz szilárd halmazállapotú");
-
-            }
-            else if (a >= 0)
-            {
-
-                a = a / 3;
-                Console.WriteLine("a víz folyékony halmazállapotú!");
-
-            }
-            else if (a > 100)
-            {
-
-                Console.WriteLine("a víz légnemü halmazállapotú!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-        }
-
-        static void feladat9()
-        {
-
-            Console.WriteLine("9. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérem a számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a % 3 == 0 && a % 4 == 0 && a % 9 == 0)
-            {
-
-                Console.WriteLine("a szám 3-mal, 9-el és 4-el osztható");
-
-            }
-            else if ( a % 9 == 0 && a % 4 == 0)
-            {
-
-                Console.WriteLine("a szám 4-el, és 9-el osztható");
-
-            }
-            else if (a % 3 == 0 && a % 9 == 0)
-            {
-
-                Console.WriteLine("a szám 3-mal és 9-el osztható");
-
-            }
-            else if (a % 3 == 0 && a % 4 == 0)
-            {
-
-                Console.WriteLine("a szám 3-mal és 4-el osztható");
-
-            }
-            else if (a % 4 == 0)
-            {
-
-                Console.WriteLine("a szám 4-el osztható");
-
-            }
-            else if (a % 9 == 0)
-            {
-
-                Console.WriteLine("a szám 9-el osztható");
-
-            }
-            else if (a % 3 == 0)
-            {
-
-                Console.WriteLine("a szám 3-mal osztható");
-
-            }
-            else
-            {
-
-                Console.WriteLine("ez a szám sem 3-mal sem 4-el, sem pedig 9-el nem osztható!");
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
-        }
-
-        static void feladat10()
-        {
-
-            Console.WriteLine("10. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérek egy számot!");
-            int a = Convert.ToInt32(Console.ReadLine());
-            if (a % 4 == 0)
-            {
-
-                Console.WriteLine("A {0} év szökőév", a);
-
-            }
-            else
-            {
-
-                Console.WriteLine("A {0} nem szökőév", a);
-
-            }
-            Console.WriteLine();
-            Console.WriteLine();
-
-        }
-
-        static void feladat11()
-        {
-
-            Console.WriteLine("11. feladat");
-            Console.WriteLine();
-            Console.WriteLine("kérem az 1. szakasz hosszát!");
-            int aszakasz = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("kérem a 2. szakasz hosszát!");
-            int bszakasz = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("kérem a 3. szakasz hosszát!");
-            int cszakasz = Convert.ToInt32(Console.ReadLine());
-
-            if (aszakasz + bszakasz > cszakasz && bszakasz + cszakasz > aszakasz && cszakasz + aszakasz > bszakasz)
-            {
-
-                Console.WriteLine("a szakaszokból lehet egy háromszöget csinálni");
-
-            }
-            else
-            {
-
-                Console.WriteLine("nem lehet ebből a háromszöget csinálni");
-
-            }
-
-
-
-            Console.WriteLine();
-            Console.WriteLine();
-
-        }
         static void Main(string[] args)
         {
+            //feladat1();
+            //feladat2();
+            //feladat3();
+            //feladat4();
+            //feladat5();
+            //feladat6();
+            //feladat7();
+            //feladat8();
+            //feladat9();
+            //feladat10();
+            //feladat11();
 
-            feladat1();
 
-            feladat2();
 
-            feladat3();
 
-            feladat4();
-
-            feladat5();
-
-            feladat6();
-
-            feladat7();
-
-            feladat8();
-
-            feladat9();
-
-            feladat10();
-
-            feladat11();
-
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("nyomjon enter-t!");
+        }
+        static void feladat1()
+        {
+            Console.WriteLine("Kérek egy számot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam % 2 == 0)
+            {
+                Console.WriteLine("A szám páros");
+            }
+            else
+            {
+                Console.WriteLine("A szám páratlan");
+            }
             Console.ReadLine();
         }
+        static void feladat2()
+        {
+            Console.WriteLine("Kérek egy számot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam < 0)
+            {
+                Console.WriteLine("A szám negatív");
+            }
+            else
+            {
+                Console.WriteLine("A szám pozitív");
+            }
+            Console.ReadLine();
+        }
+        static void feladat3()
+        {
+            Console.WriteLine("Hány fok van kint? :");
+            int homerseklet = Convert.ToInt32(Console.ReadLine());
+            if (homerseklet < 0)
+            {
+                Console.WriteLine("Fagy van kint");
+            }
+            else
+            {
+                Console.WriteLine("Nincs kint fagy");
+            }
+            Console.ReadLine();
+        }
+        static void feladat4()
+        {
+            Console.WriteLine("Kérek egy számot");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (-30 < szam && szam < 40)
+            {
+                Console.WriteLine("A szám a tartományban van");
+            }
+            else
+            {
+                Console.WriteLine("A szám nincs a tartományban");
+            }
+            Console.ReadLine();
+        }
+        static void feladat5()
+        {
+            Console.WriteLine("Kérek egy számot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam < 16)
+            {
+                szam = szam * 16;
+                Console.WriteLine(szam);
+            }
+            else if (szam >= 16)
+            {
+                szam = szam / 3;
+                Console.WriteLine(szam);
+            }
+            Console.ReadLine();
+        }
+        static void feladat6()
+        {
+            Console.WriteLine("Kérek egy számot 10 és 50 között :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (10 <= szam && szam <= 19)
+            {
+                Console.WriteLine("Tizesek közé tartozik");
+            }
+            else if (20 <= szam && szam <= 29)
+            {
+                Console.WriteLine("huszasok közé tartozik");
+            }
+            else if (30 <= szam && szam <= 39)
+            {
+                Console.WriteLine("Harmincasok közé tartozik");
+            }
+            else if (40 <= szam && szam <= 49)
+            {
+                Console.WriteLine("negyvenesek közé tartozik");
+            }
+            Console.ReadLine();
+        }
+        static void feladat7()
+        {
+            Console.WriteLine("Kérek egy számot : ");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (12 < szam && szam < 25 && szam % 2 == 0)
+            {
+                Console.WriteLine("A tartományban lévő szám páros");
+            }
+            else
+            {
+                Console.WriteLine("A szám nincs a tartományban vagy nem páros");
+            }
+            Console.ReadLine();
+        }
+        static void feladat8()
+        {
+            Console.WriteLine("Kérem a víz hőmérsékletét");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if(szam<0)
+            {
+                Console.WriteLine("A víz szilárd halmazállapotú");
+            }
+            else if(0<=szam && szam<100)
+            {
+                Console.WriteLine("A víz folyékony halmazállapotú");
+            }
+            else if(100<=szam)
+            {
+                Console.WriteLine("A víz gáz halmazállapotú");
+            }
+            Console.ReadLine();
+        }
+        static void feladat9()
+        {
+            Console.WriteLine("Kérek egy számot : ");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if (szam%3==0 && szam%4==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám osztahtó 3-mal 4-el és 9-el is");
+            }
+            else if(szam%3==0 && szam%4==0)
+            {
+                Console.WriteLine("A szám osztahtó 3-mal és 4-el");
+            }
+
+            else if(szam%3==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám 3-mal és 9-el osztahtó");
+            }
+            else if (szam % 3 == 0)
+            {
+                Console.WriteLine("A szám osztható 3-mal");
+            }
+            else if(szam%4==0 && szam%9==0)
+            {
+                Console.WriteLine("A szám 4-el és 9-el osztható");
+            }
+            else if(szam%4==0)
+            {
+                Console.WriteLine("A szám 4-el osztható");
+            }
+           
+            else
+            {
+                Console.WriteLine("Egyikkel sem osztható");
+            }
+            Console.ReadLine();
+        }
+        static void feladat10()
+        {
+            Console.WriteLine("Kérem az évszámot :");
+            int szam = Convert.ToInt32(Console.ReadLine());
+            if(szam%4==0)
+            {
+                Console.WriteLine("A megadott év szökőév");
+            }
+            else
+            {
+                Console.WriteLine("A megadott év nem szökőév");
+            }
+            Console.ReadLine();
+        }
+        static void feladat11()
+        {
+            Console.WriteLine("Kérek az a szakaszt :");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérek a b szakaszt :");
+            int b = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Kérek a c szakaszt :");
+            int c = Convert.ToInt32(Console.ReadLine());
+            if(a + b > c && a + c > b && b + c > a)
+            {
+                Console.WriteLine("A háromszög szerkezthető");
+            }
+            else
+            {
+                Console.WriteLine("A háromszög nem szerkezthető");
+            }
+            Console.ReadLine();
+
+        }
+        
+        
+        
+
+        
+
     }
 }

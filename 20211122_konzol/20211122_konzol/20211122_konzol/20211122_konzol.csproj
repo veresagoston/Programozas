@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{5E010CDB-6747-4F4D-8D29-BFD8DA41D1AF}</ProjectGuid>
+    <ProjectGuid>{8BB38A24-E00E-4C39-A552-25015757E2F0}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_20210920</RootNamespace>
-    <AssemblyName>20210920</AssemblyName>
+    <RootNamespace>_20211122_konzol</RootNamespace>
+    <AssemblyName>20211122_konzol</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
