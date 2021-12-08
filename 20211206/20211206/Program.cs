@@ -23,7 +23,13 @@ namespace _20211206
             //feladat10();
             //feladat11();
             //feladat12();
-            feladat13();
+            //feladat13();
+            //feladat14();
+            //feladat15();
+            //feladat16();
+            //feladat17();
+            //feladat18();
+            feladat19();
             Console.ReadLine();
         }
         static void feladat1()
@@ -109,16 +115,101 @@ namespace _20211206
         {
             Console.WriteLine("Kérek egy egész számot!");
             int szam = int.Parse(Console.ReadLine());
-            Console.WriteLine("Pozitiv");
-            Console.WriteLine(szam>0);
-            Console.WriteLine("Nulla");
-            Console.WriteLine(szam=0);
-            Console.WriteLine("Negativ");
-            Console.WriteLine(szam<0);
+            if (szam > 0)
+            {
+                Console.WriteLine("Pozitiv");
+            }
+           else if(szam==0)
+            {
+                Console.WriteLine("nulla");
+            }
+            else
+            {
+                Console.WriteLine("negatív");
+            }
         }
-        
-        
+        static void feladat14()
+        {
+            Console.WriteLine("Kérek egy egész számot!");
+            int szam = int.Parse(Console.ReadLine());
+            if (szam>=30)
+            {
+                Console.WriteLine("Nagyobb mint 30");
+            }
+            else 
+            {
+                Console.WriteLine("Kisebb mint 30");
+            }
+        }
+        static void feladat15()
+        {
+            Console.WriteLine("Kérek egy egész számot!");
+            int szam = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kérek egy másik számot!");
+            int szam2 = int.Parse(Console.ReadLine());
+            if (szam>szam2)
+            {
+                Console.WriteLine($"{szam}nagyobb mint {szam2}");
+            }
+            else
+            {
+                Console.WriteLine($"{szam2} nagyobb mint {szam}");
+            }
+        }
+        static void feladat16()
+        {
+            Console.WriteLine("Kérek egy egész számot");
+            int szam = int.Parse(Console.ReadLine());
+            Console.WriteLine("Kérek egy másik egész számot!");
+            int szam2 = int.Parse(Console.ReadLine());
+            if (szam<szam2)
+            {
+                Console.WriteLine($"{szam} kisebb mint {szam2}");
+            }
+            else
+            {
+                Console.WriteLine($"{szam2} kisebb mint {szam}");
+            }
+        }
+        static void feladat17()
+        {
+            Console.WriteLine("Kérek egy szót!");
+            string szo = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < szo.Length; i++)
+            {
+                darab = i + 1;
+            }
+            Console.WriteLine($"{darab} karakterből áll.");
+        }
+        static void feladat18()
+        {
+            Console.WriteLine("Kérek egy szót");
+            string szo = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < szo.Length; i++)
+            {
+                if (szo[i]=='e')
+                {
+                    darab++;
+                }
+            }
+            Console.WriteLine($"{darab} e betű van a szóban.");
+        }
+        static void feladat19()
+        {
+            Console.WriteLine("Kérek egy szót!");
+            string szo = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < szo.Length; i++)
+            {
+                darab++;
+                if (true)
+                {
 
+                }
+            }
+        }
 
 
     }
