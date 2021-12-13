@@ -29,7 +29,9 @@ namespace _20211206
             //feladat16();
             //feladat17();
             //feladat18();
-            feladat19();
+            //feladat19();
+            //feladat20();
+            feladat21();
             Console.ReadLine();
         }
         static void feladat1()
@@ -202,14 +204,88 @@ namespace _20211206
             string szo = Console.ReadLine();
             int darab = 0;
             for (int i = 0; i < szo.Length; i++)
-            {
-                darab++;
-                if (true)
-                {
 
+            {
+                if (szo[i] == ('a'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('á'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('e'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('é'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('o'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('ó'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('u'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('ú'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('ü'))
+                {
+                    darab = darab + 1;
+                    
+                }
+                else if (szo[i] == ('ű'))
+                {
+                    darab = darab + 1;
+                    
                 }
             }
+            Console.WriteLine($"{darab} magánhangzó van benne.");
         }
+        static void feladat20()
+        {
+            Console.WriteLine("Írj be egy mondatot!");
+            string mondat = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < mondat.Length; i++)
+            {
+                darab = darab + 1;
+                
+            }
+            Console.WriteLine($"{darab} karakterből áll a mondat.");
+        }
+        static void feladat21()
+        {
+            Console.WriteLine("Írj be egy mondatot!");
+            string mondat = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < mondat.Length; i++)
+            {
+                if(mondat[i]==(' '))
+                {
+                    darab = darab + 1;
+                }
+            }
+            Console.WriteLine($"{darab} szóköz völt a mondatban.");
+        }
+
 
 
     }
