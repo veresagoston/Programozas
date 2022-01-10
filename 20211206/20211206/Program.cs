@@ -31,7 +31,9 @@ namespace _20211206
             //feladat18();
             //feladat19();
             //feladat20();
-            feladat21();
+            //feladat21();
+            //feladat22();
+            feladat23();
             Console.ReadLine();
         }
         static void feladat1()
@@ -284,6 +286,35 @@ namespace _20211206
                 }
             }
             Console.WriteLine($"{darab} szóköz völt a mondatban.");
+        }
+        static void feladat22()
+        {
+            Console.WriteLine("Írj be egy mondatot");
+            string mondat = Console.ReadLine();
+            int darab = 0;
+            for (int i = 0; i < mondat.Length; i++)
+            {
+                if (mondat[i]==('e'))
+                {
+                    darab = darab + 1;
+                }
+            }
+            Console.WriteLine($"{darab} e betű van a mondatban.");
+        }
+        static void feladat23()
+        {
+            Console.WriteLine("Írj be egy mondatot!");
+            string mondat = Console.ReadLine();
+            int darab = 1;
+            
+            for (int i = 0; i < mondat.Length; i++)
+            {
+                if (mondat[i]==(' '))
+                {
+                    darab = darab + 1;
+                }
+            }
+            Console.WriteLine($"{darab} szó van a mondatban.");
         }
 
 
